@@ -1,0 +1,511 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(255, 255, 255);
+    color:#0e0d0e;
+}
+
+
+
+
+
+
+.hero {
+
+
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.hero-container {
+  display: flex;
+  flex-flow: row;
+}
+
+.hero-container-case {
+  display: flex;
+  flex-flow: row;
+}
+
+
+.hero-body h1 {
+    /* Text styles */
+    font-size: 7em;
+}
+
+.hero-body h2 {
+    /* Text styles */
+    font-size: 4em;
+}
+
+.hero-body h3 {
+  font-size: 2em;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #8933a6;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Style the header links */
+  .header a{
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Change the background color on mouse-over */
+.header a:hover {
+    background-color: dodgerblue;
+    color: ghostwhite;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #8933a6;
+  color: ghostwhite;
+  border: none;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: ghostwhite;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: dodgerblue;}
+
+
+
+
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+   @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  
+  * {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.card {
+  margin: 10px;
+  width: 700px;
+}
+
+.gallery {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.hooter {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  background-color: #8933a6;
+  color: ghostwhite;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero-body{
+    max-width:min-content;
+    margin: auto;
+  }
+
+  .hero-container-case {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-case {
+    padding: 40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-case {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 400px;
+    }
+    .gallery {
+      flex-wrap: wrap;
+    }
+
+
+  }
+
+  .overview-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    margin-left: 40px;
+  }
+
+  .column {
+    display: flex;
+    justify-content:left;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+.title-bar {
+  display: flex;
+  background-color: #9053b1;
+  color: ghostwhite;
+  height: 80px;
+  width: 100dvw;
+}
+
+.casetitle-bar {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+  font-size: larger;
+}
+
+
+
+
+
+
+.case-container {
+  padding: 60px;
+  display: inline-flex;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: dodgerblue;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+/* カルーセル全体 */
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+/* カルーセル内容 */
+.contains {
+  /* サイズは自由に変更してください。*/
+  /* 下の.slideも同じサイズにしてください。 */
+  width: 600px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+/* スライド切り換え用ラジオボタンは常に非表示 */
+.slide_select {
+  display: none;
+}
+/* 各スライド */
+.slide {
+  /* サイズは自由に変更してください。*/
+  /* 上の.containsも同じサイズにしてください。 */
+  width: 600px;
+  height: 320px;
+  position: absolute;
+  /* スライドの初期値は選択されていないので透明にしておく */
+  opacity: 0;
+}
+/* 前へ次へボタン */
+.scroll_button {
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  /* 縦中央から20px上の位置 */
+  top: 50%;
+  margin-top: -20px;
+  /* 上辺と右辺のみ幅5pxの枠線 */
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: rgb(71, 69, 71);
+  cursor: pointer;
+  /* 普段はボタンはやや薄くする */
+  opacity: 0.5;
+  /* スライドよりも前面にする */
+  z-index: 3;
+}
+/* ホバー時にボタンを強調 */
+.scroll_button:hover {
+  opacity: 1;
+}
+/* 前へボタン */
+.scroll_prev {
+  left: 15px;
+  /* 上辺と右辺の枠線を回転して"＜"にする */
+  transform: rotate(-135deg);
+}
+/* 次へボタン */
+.scroll_next {
+  right: 15px;
+  /* 上辺と右辺の枠線を回転して"＞"にする */
+  transform: rotate(45deg);
+}
+/* スライド移動ボタンエリア */
+.move_controler {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+/* スライド移動の各ボタン */
+.button_move {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 100%;
+  cursor: pointer;
+  /* 普段はやや薄くする */
+  opacity: 0.5;
+  /* スライドより前面にする */
+  z-index: 2;
+}
+/* ホバー時はやや明るくする */
+.button_move:hover {
+  opacity: 0.75;
+}
+/* スライド移動ボタンの色 */
+.button_move {
+  background-color: dodgerblue;
+}
+/* 1番目のスライド選択時 */
+/* 1番目のスライドの透明度を0にして表示する */
+.slide_select:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
+  opacity: 1;
+}
+/* スライド移動ボタンの1個目を明るくする */
+/* （今選択されていることが分かるように） */
+.slide_select:nth-of-type(1):checked ~ .move_controler .button_move:nth-of-type(1) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
+  opacity: 1;
+}
+/* 2番目のスライド選択時（1番目のスライドと同じことをする） */
+.slide_select:nth-of-type(2):checked ~ .move_controler .button_move:nth-of-type(2) {
+  opacity: 1;
+}
+/* 3番目のスライド選択時 */
+.slide_select:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(3):checked ~ .move_controler
+  .button_move:nth-of-type(3) {
+  opacity: 1;
+}
+/* 4番目のスライド選択時 */
+.slide_select:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(4):checked
+  ~ .move_controler
+  .button_move:nth-of-type(4) {
+  opacity: 1;
+}

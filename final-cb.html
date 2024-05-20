@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Tsumugi Jinguji</title>
+</head>
+
+<body>
+    <section class="hero">
+
+        <div class="header">
+            <div class="header-right">
+              <a href="final.html">HOME</a>
+              <a href="#ABOUT">ABOUT</a>
+              <div class="dropdown">
+                <button class="dropbtn active">PORTFOLIO</button>
+                <div class="dropdown-content">
+                  <a href="final-cb.html">CB Beauty</a>
+                  <a href="#">Title 2</a>
+                  <a href="#">Title 3</a>
+                </div>
+              </div>
+              <a href="#RESUME">RESUME</a>
+              <a href="#CONTACT">CONTACT</a>
+            </div>
+        </div>
+
+        <div class="hero-case">
+            <div class="hero-body">
+                <div style="margin: 40px;">
+                  <h2>CB Beauty</h2>
+                  <h3>UI/UX Design Project</h3>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </section>
+
+    
+    <section>
+         <div class="title-bar">
+         <div class="casetitle-bar"><b>Overview</b></div>
+         </div>
+
+         <div class="overview-container">
+         <div class="row">
+            <div class="column">
+                <h3>Project Length: 1 month</h3>
+            </div>
+            <div class="column">
+                <h3>The Number of members: 5</h3>
+            </div>
+            <div class="column">
+                <h3>Goals</h3>
+                <ul>
+                    <li>introduce an user-friendly booking system</li>
+                    <li>make the design modern and sophisticated which is client's request </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Figma</li>
+                    <li>Slack</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+          </div>
+          </div>
+
+    </section>
+
+    <section>
+        <div class="title-bar">
+            <div class="casetitle-bar"><b>Empathy & Ideate</b></div>
+        </div>
+
+    <div class=case-container>
+    <div class="slideshow-container">
+        <div class="carousel">
+            <div class="contains">
+              <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
+              <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+              <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+              <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+              <input class="slide_select" type="radio" id="SlideD" name="slide_check" />
+              <!-- スライド -->
+              <!-- 上のラジオボックスと同じ数だけ記述します。-->
+              <div class="slide">
+                <!-- スライドの前へ、次へとスクロールさせるボタン -->
+                <div class="scroll_controler">
+                  <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
+                  <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
+                  <label class="scroll_button scroll_prev" for="SlideD"></label>
+                  <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
+                  <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
+                  <label class="scroll_button scroll_next" for="SlideB"></label>
+                </div>
+                <!-- スライドの内容（ここでは画像）を記述します。 -->
+                <!-- div要素に変えれば文字を加えることもできます。 -->
+                <img src="pic/FireShot Capture 267.png">
+              </div>
+              <!-- スライド（2番目）内容は1個めと同じ -->
+              <div class="slide">
+                <div class="controler_scroll">
+                  <label class="scroll_button scroll_prev" for="SlideA"></label>
+                  <label class="scroll_button scroll_next" for="SlideC"></label>
+                </div>
+                <img src="pic/FireShot Capture 270.png">
+              </div>
+              <!-- スライド（3番目）内容は1個めと同じ -->
+              <div class="slide">
+                <div class="controler_scroll">
+                  <label class="scroll_button scroll_prev" for="SlideB"></label>
+                  <label class="scroll_button scroll_next" for="SlideD"></label>
+                </div>
+                <img src="https://picsum.photos/320/180?random=3">
+              </div>
+              <!-- スライド（4番目）内容は1個めと同じ -->
+              <div class="slide">
+                <div class="controler_scroll">
+                  <label class="scroll_button scroll_prev" for="SlideC"></label>
+                  <label class="scroll_button scroll_next" for="SlideA"></label>
+                </div>
+                <img src="https://picsum.photos/320/180?random=4">
+              </div>
+              <!-- スライド移動用ボタン -->
+              <div class="move_controler">
+                <!-- 1個目のスライドのボタン -->
+                <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
+                <label class="button_move" for="SlideA"></label>
+                <label class="button_move" for="SlideB"></label>
+                <label class="button_move" for="SlideC"></label>
+                <label class="button_move" for="SlideD"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="description-container">
+            <h3>Research: CJM, Persona, Compepetive Analysis, IA, Identification, User Interview, Client Interview</h3>
+            <p>We interviewed those who are woman aged 15-60 which is our client's target. All interviewers had experience booking salons, and the main concern was the inconvenience of the separation between service information and reservation systems.</p>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <div class="title-bar">
+            <div class="casetitle-bar"><b>Define</b></div>
+        </div>
+
+        <div class=case-container>
+        </div>
+    </section>
+
+
+
+
+    <div class="hooter">©Tsumugi Jinguji 2024</div>
+
+</body>
